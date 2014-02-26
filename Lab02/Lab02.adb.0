@@ -1,0 +1,79 @@
+--Billy Coss
+--Lab02.adb
+--Dr. Lewis
+
+
+WITH Ada.Text_Io;
+USE Ada.Text_Io;
+WITH Ada.Integer_Text_Io;
+USE Ada.Integer_Text_Io;
+WITH Ada.Float_Text_IO;
+USE Ada.Float_Text_IO;
+
+PROCEDURE Lab02 IS
+   Num_Ints     : Integer := 0;
+   High         : Integer := 0;
+   Low          : Integer := 0;
+   Input_Number : Integer := 0;
+   Greater_Than : Integer := 0;
+   Less_Than    : Integer := 0;
+   In_Between   : Integer := 0;
+   Low_Percent : Natural;
+   High_Percent: Natural;
+   In_Between_Percent: Natural;
+
+BEGIN
+   Get(Low);
+   Get(High);
+
+   WHILE NOT End_Of_File LOOP
+      Get(Input_Number);
+      Num_Ints := Num_Ints + 1;
+
+
+      -- Count In Between
+      IF Input_Number >= Low AND Input_Number <= High THEN
+         In_Between := In_Between + 1;
+
+         -- Count Less Than Low
+      ELSIF Input_Number <= Low THEN
+         Less_Than := Less_Than + 1;
+
+         -- Count greater than high
+      ELSE
+         Greater_Than := Greater_Than + 1;
+
+      END IF;
+
+   END LOOP;
+
+   Low_Percent := (Less_Than / Num_Ints);
+   In_Between_Percent := (In_Between / Num_Ints);
+   High_Percent := (Greater_Than / Num_Ints);
+
+   Set_Col(15);
+   Put("Count");
+   Set_Col(35);
+   Put("Percent");
+   new_Line;
+
+
+   Put(">");
+   Set_Col(15);
+   put(
+   Put(High_Percent);
+   New_Line;
+
+   Put("<>");
+      Set_Col(35);
+
+   Put(In_Between_Percent);
+   New_Line;
+
+
+
+   Put("<");
+   Set_Col(35);
+   Put(Low_Percent);
+
+END Lab02;

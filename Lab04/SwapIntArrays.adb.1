@@ -1,0 +1,60 @@
+--Billy Coss
+--SwapIntArrays.adb
+--Dr. Lewis
+
+
+WITH Ada.Text_Io;
+USE Ada.Text_Io;
+WITH Ada.Integer_Text_Io;
+USE Ada.Integer_Text_Io;
+
+PROCEDURE SwapIntArrays IS
+   MaxSize: Constant Integer := 10;
+   TYPE IntArray IS ARRAY (1 .. MaxSize) OF Integer;
+
+
+   --Gets values to store in arrays
+   FUNCTION GetValue return IntArray IS
+      ArrayOne: IntArray;
+   BEGIN
+      FOR i IN ArrayOne'Range LOOP
+         Put("Enter Array, number ");
+         Put(I, 2);
+         Put(": ");
+         Get(ArrayOne(I));
+      END LOOP;
+      RETURN ArrayOne;
+
+--todo: Add negative exception
+   END GetValue;
+
+   --Swaps values from ArrayOne to ArrayTwo
+   PROCEDURE SwapValues(AOne, ATwo: in out IntArray)IS
+      ValueOne, ValueTwo: Integer;
+
+
+
+   BEGIN
+      FOR I IN 1..10 LOOP
+           put("test");
+
+      END LOOP;
+
+   END SwapValues;
+
+   --
+--   PROCEDURE PrintArrays IS
+
+
+--   BEGIN
+
+
+   --   END PrintArrays;
+ArrayOne, ArrayTwo : IntArray;
+
+
+BEGIN
+   ArrayOne := GetValue;
+   ArrayTwo := GetValue;
+
+END SwapIntArrays;

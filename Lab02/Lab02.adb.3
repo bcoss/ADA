@@ -1,0 +1,52 @@
+--Billy Coss
+--Lab02.adb
+--Dr. Lewis
+
+
+WITH Ada.Text_Io;
+USE Ada.Text_Io;
+WITH Ada.Integer_Text_Io;
+USE Ada.Integer_Text_Io;
+WITH Ada.Float_Text_IO;
+USE Ada.Float_Text_IO;
+
+PROCEDURE GetcountPZN IS
+   Num_Ints     : Integer := 0;
+   High         : Integer;
+   Low          : Integer;
+   Input_Number : Integer;
+   Greater_Than : Integer := 0;
+   Less_Than    : Integer := 0;
+   In_Between   : Integer := 0;
+
+BEGIN
+
+   Put("High: ");
+   Get(High);
+   New_Line;
+   Put("Low: ");
+   Get(Low);
+
+   WHILE NOT End_Of_File LOOP
+
+      Num_Ints := Num_Ints+1;
+
+      -- Count In Between
+      IF Input_Number >= Low AND Input_Number <= High THEN
+         In_Between := In_Between + 1;
+
+         -- Count Less Than Low
+      ELSIF Input_Number <= Low THEN
+         Less_Than := Less_Than + 1;
+
+         -- Count greater than high
+      ELSE
+         Greater_Than := Greater_Than + 1;
+
+      END IF;
+
+   END LOOP;
+
+   Put_Line
+
+   END GetcountPZN;

@@ -1,0 +1,48 @@
+--Billy Coss
+--Lab 01
+WITH ADA.Integer_Text_IO;
+USE ADA.Integer_Text_IO;
+WITH ADA.Text_IO;
+USE ADA.Text_IO;
+WITH ADA.Float_Text_IO;
+USE ADA.Float_Text_IO;
+PROCEDURE Hello IS
+   Map_Scale_Factor : Float;
+   Distance_01      : Float;
+   Distance_02      : Float;
+   Result_01        : Float;
+   Result_02        : Float;
+   Last             : Natural;
+
+BEGIN
+   Put_Line(" Enter the Map Scale Factor:");
+   Get(Map_Scale_Factor);
+   Put_Line("Enter Distance 1:");
+   Get(Distance_01);
+   Put_Line("Enter Distance 2:");
+   Get(Distance_02);
+
+   Result_01 := Distance_01 * Map_Scale_Factor;
+   Result_02 := Distance_02 * Map_Scale_Factor;
+
+   Put_Line("Billy Coss");
+   Put_Line("Simple Map Distacne Computations");
+   Put("Map Scale Factor:  miles per inch ");
+   Put(Map_Scale_Factor);
+   Put(" miles per inch");
+   Put_Line("   Map Distance   Mileage Distance");
+   Put_Line("=========================================");
+   Put("#1   ");
+   Put(Distance_01);
+   Put("   ");
+   Put(Result_01);
+   New_Line;
+   Put("#2   ");
+   Put(Distance_02);
+   Put("   ");
+   Put(Result_02);
+   New_Line;
+   Put_Line("=========================================");
+   Put("Total Distance         ");
+   Put(Result_01 + Result_02);
+END Hello;

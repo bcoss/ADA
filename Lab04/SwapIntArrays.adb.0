@@ -1,0 +1,19 @@
+--Billy Coss
+--SwapIntArrays.adb
+--Dr. Lewis
+
+
+WITH Ada.Text_Io;
+USE Ada.Text_Io;
+WITH Ada.Integer_Text_Io;
+USE Ada.Integer_Text_Io;
+
+PROCEDURE SwapIntArrays IS
+
+   Procedure GetValue IS
+      TYPE ArrayOne IS ARRAY (1 .. 10) OF Integer;
+      TYPE ArrayTwo IS ARRAY (1 .. 10) OF Integer;
+   BEGIN
+   END GetValue;
+
+END SwapIntArrays;

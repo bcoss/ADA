@@ -1,0 +1,51 @@
+--Billy Coss
+--Lab03.adb
+--Dr. Lewis
+
+
+WITH Ada.Text_Io;
+USE Ada.Text_Io;
+WITH Ada.Integer_Text_Io;
+USE Ada.Integer_Text_Io;
+
+PROCEDURE Lab03 IS
+   NotPositiveInt : EXCEPTION;
+   X: Integer;
+
+   PROCEDURE GetVariables (A : in Integer) IS
+   BEGIN
+
+      put_line("do something");
+
+
+   END GetVariables;
+
+   PROCEDURE Multiply (A,B,C: Integer) IS
+   BEGIN
+       put_line("do something");
+
+
+   END Multiply;
+
+   PROCEDURE Increment10 (C: in out Integer) IS
+   BEGIN
+      put_line("do something");
+
+
+   END Increment10;
+
+   --main procedure begins here
+   BEGIN
+
+
+
+   --you will need a loop to end at the end_of_file
+
+
+   --Put_Line("The product of A (" & Integer'Image(A) & ") and B (" &Integer'Image(B) & ") is : " & Integer'Image(C));
+      GetVariables(X);
+
+   --put_Line("The C incremented by 10 is:" & Integer'Image(C));
+      New_Line;
+
+   END Lab03;

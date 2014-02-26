@@ -1,0 +1,62 @@
+--Billy Coss
+--Lab02.adb
+--Dr. Lewis
+
+
+WITH Ada.Text_Io;
+USE Ada.Text_Io;
+WITH Ada.Integer_Text_Io;
+USE Ada.Integer_Text_Io;
+WITH Ada.Float_Text_IO;
+USE Ada.Float_Text_IO;
+
+PROCEDURE Lab02 IS
+   Num_Ints     : Integer := 0;
+   High         : Integer := 0;
+   Low          : Natural := 0;
+   Input_Number : Integer := 0;
+   Greater_Than : Integer := 0;
+   Less_Than    : Integer := 0;
+   In_Between   : Integer := 0;
+
+BEGIN
+   Get(Low);
+   Get(High);
+
+   WHILE NOT End_Of_File LOOP
+      Get(Input_Number);
+      Num_Ints := Num_Ints+1;
+
+
+      -- Count In Between
+      IF Input_Number >= Low AND Input_Number <= High THEN
+         In_Between := In_Between + 1;
+
+         -- Count Less Than Low
+      ELSIF Input_Number <= Low THEN
+         Less_Than := Less_Than + 1;
+
+         -- Count greater than high
+      ELSE
+         Greater_Than := Greater_Than + 1;
+
+      END IF;
+
+   END LOOP;
+
+   Put("% of numbers greater than");
+      set_col(26);
+   Put(High);
+   New_Line;
+
+   Put("% of numbers in between ");
+   Put(Low);
+   Put(" and ");
+   Put(High);
+   New_Line;
+
+   set_col(26);
+   Put("% of numbers lower than ");
+   Put(Low);
+
+END Lab02;

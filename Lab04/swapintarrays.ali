@@ -1,0 +1,82 @@
+V "GNAT Lib v2013"
+M P W=b
+A -gnatwu
+A -gnat05
+A -mtune=generic
+A -march=pentiumpro
+P ZX
+
+RN
+RV NO_IO
+RV SPARK
+
+U swapintarrays%b	swapintarrays.adb	f63e7b20 NE OO SU KU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20130417131022 3ffc8e18
+D a-except.ads		20130417131018 10fcae55
+D a-finali.ads		20130417131020 52ecdc1b
+D a-inteio.ads		20130417131020 f64b89a4
+D a-ioexce.ads		20130417131020 8b9de6cd
+D a-stream.ads		20130417131020 2ca4ee37
+D a-tags.ads		20130417131022 6c0509d0
+D a-textio.ads		20130417131022 386df5d4
+D a-tiinio.ads		20130417131022 aa04e5d6
+D a-unccon.ads		20130417131022 f9eb8f06
+D interfac.ads		20130417131026 cb4a8015
+D i-cstrea.ads		20130417131026 8128536b
+D swapintarrays.adb	20140226152040 38180750
+D system.ads		20130417131036 5fc8ae56
+D s-crtl.ads		20130417131028 dfcfca61
+D s-exctab.ads		20130417131028 66e51330
+D s-ficobl.ads		20130417131028 55a71d43
+D s-finmas.ads		20130417131028 b95bb341
+D s-finroo.ads		20130417131028 4ff27390
+D s-parame.ads		20130417131032 b6e20cc0
+D s-pooglo.ads		20130417131032 542f33d0
+D s-soflin.ads		20130417131032 24c8153c
+D s-stache.ads		20130417131032 596fc1b4
+D s-stalib.ads		20130417131032 f78bcf95
+D s-stoele.ads		20130417131032 facd7d98
+D s-stoele.adb		20130417131032 afc5dc80
+D s-stopoo.ads		20130417131032 7b8fbeee
+D s-traent.ads		20130417131032 5221ee41
+D s-unstyp.ads		20130417131034 6ae15c76
+D s-wchcon.ads		20130417131034 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 13|6r6 7r5 8r6 9r5
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[9|45] 13|8w10 9r9
+X 8 a-textio.ads
+49K13*Text_IO 471e16 13|6w10 7r9
+166U14*New_Line 13|20s7 33s10 76s7 81s7
+242U14*Put 13|19s7 29s10 31s10 68s13 70s13 72s10 78s10
+X 9 a-tiinio.ads
+55U14*Get 13|32s10[4|18]
+65U14*Put 13|30s10[4|18] 73s10[4|18] 79s10[4|18]
+X 13 swapintarrays.adb
+11U11*SwapIntArrays 11b11 101l5 101t18
+12i4 MaxSize{integer} 13r33
+13A9 IntArray(integer)<integer> 25r29 26r17 41r44 63r41 86r22
+16U14 PrintLines 16b14 21l8 21t18 93s4 95s4
+25V13 GetValue{13A9} 25b13 38l8 38t16 90s16 91s16
+26a7 ArrayOne{13A9} 28r16 32m14 32r14 35r14
+28i11 i{integer} 30r14 32r23
+41U14 SwapValues 41b14 41=25 41=31 60l8 60t18 97s4
+41a25 AOne{13A9} 50r16 51r15 56m10
+41a31 ATwo{13A9} 52r15 53r15 55m10
+42i7 A{integer} 51m10 55r21
+42i10 B{integer} 52m10
+42i13 C{integer} 53m10 56r21
+50i11 I{integer} 51r20 52r20 53r20 55r15 56r15
+63U14 PrintArrays 63b14 63>26 63>32 63>51 83l8 83t19 94s4 99s4
+63a26 AOne{13A9} 66r16 73r14
+63a32 ATwo{13A9} 77r16 79r14
+63i51 K{integer} 67r13
+66i11 I{integer} 73r19
+77i11 I{integer} 79r19
+86a1 ArrayOne{13A9} 90m4 94r16 97m15 97r15 99r16
+86a11 ArrayTwo{13A9} 91m4 94r26 97m25 97r25 99r26
+

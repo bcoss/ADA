@@ -1,0 +1,55 @@
+--Billy Coss
+--Lab03.adb
+--Dr. Lewis
+
+
+WITH Ada.Text_Io;
+USE Ada.Text_Io;
+WITH Ada.Integer_Text_Io;
+USE Ada.Integer_Text_Io;
+
+PROCEDURE Lab03 IS
+   NotPositiveInt : EXCEPTION;
+   A,B,C : Integer;
+
+   PROCEDURE GetVariables IS
+   BEGIN
+      Get(A);
+      Get(B);
+
+   END GetVariables;
+
+   PROCEDURE Multiply (X,Y :Integer; Z : OUT Integer) IS
+   BEGIN
+      Z := X * Y;
+
+
+   END Multiply;
+
+   PROCEDURE Increment10 ( Z : IN OUT Integer) IS
+   BEGIN
+      Z := Z+10;
+
+   END Increment10;
+
+   --main procedure begins here
+BEGIN
+   WHILE NOT End_Of_File LOOP
+      GetVariables;
+      IF A < 0 OR B < 0 THEN
+         RAISE NotPositiveInt WITH ("Negative numbers not allowed, reenter numbers.");
+      ELSE
+         Multiply(A,B,C);
+         Put_Line("The product of A (" & Integer'Image(A) & ") and B (" &Integer'Image(B) & ") is : " & Integer'Image(C));
+
+         Increment10(C);
+         Put_Line("The C incremented by 10 is:" & Integer'Image(C));
+         New_Line;
+      END IF;
+
+   END LOOP;
+
+   EXE
+
+
+END Lab03;

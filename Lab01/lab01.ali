@@ -1,0 +1,74 @@
+V "GNAT Lib v2013"
+M P W=b
+A -gnatwu
+A -gnat05
+A -mtune=generic
+A -march=pentiumpro
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IO
+RV SPARK
+
+U hello%b		lab01.adb		463da9f9 NE OO SU KU
+W ada%s			ada.ads			ada.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20130417131022 3ffc8e18
+D a-except.ads		20130417131018 10fcae55
+D a-finali.ads		20130417131020 52ecdc1b
+D a-flteio.ads		20130417131020 e18a47a0
+D a-inteio.ads		20130417131020 f64b89a4
+D a-ioexce.ads		20130417131020 8b9de6cd
+D a-stream.ads		20130417131020 2ca4ee37
+D a-tags.ads		20130417131022 6c0509d0
+D a-textio.ads		20130417131022 386df5d4
+D a-tiflio.ads		20130417131022 56fbda09
+D a-tiinio.ads		20130417131022 aa04e5d6
+D a-unccon.ads		20130417131022 f9eb8f06
+D lab01.adb		20140224235756 69919229
+D interfac.ads		20130417131026 cb4a8015
+D i-cstrea.ads		20130417131026 8128536b
+D system.ads		20130417131036 5fc8ae56
+D s-crtl.ads		20130417131028 dfcfca61
+D s-exctab.ads		20130417131028 66e51330
+D s-ficobl.ads		20130417131028 55a71d43
+D s-finmas.ads		20130417131028 b95bb341
+D s-finroo.ads		20130417131028 4ff27390
+D s-parame.ads		20130417131032 b6e20cc0
+D s-pooglo.ads		20130417131032 542f33d0
+D s-soflin.ads		20130417131032 24c8153c
+D s-stache.ads		20130417131032 596fc1b4
+D s-stalib.ads		20130417131032 f78bcf95
+D s-stoele.ads		20130417131032 facd7d98
+D s-stoele.adb		20130417131032 afc5dc80
+D s-stopoo.ads		20130417131032 7b8fbeee
+D s-traent.ads		20130417131032 5221ee41
+D s-unstyp.ads		20130417131034 6ae15c76
+D s-wchcon.ads		20130417131034 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 13|3r6 4r5 5r6 6r5 7r6 8r5
+X 4 a-flteio.ads
+20K13*Float_Text_IO[10|45] 13|7w10 8r9
+X 5 a-inteio.ads
+18K13*Integer_Text_IO[11|45] 13|3w10 4r9
+X 9 a-textio.ads
+49K13*Text_IO 471e16 13|5w10 6r9
+166U14*New_Line 13|39s4 44s4
+242U14*Put 13|30s4 32s4 35s4 37s4 40s4 42s4 46s4
+263U14*Put_Line 13|18s4 20s4 22s4 28s4 29s4 33s4 34s4 45s4
+X 10 a-tiflio.ads
+56U14*Get 13|19s4[4|20] 21s4[4|20] 23s4[4|20]
+67U14*Put 13|31s4[4|20] 36s4[4|20] 38s4[4|20] 41s4[4|20] 43s4[4|20] 47s4[4|20]
+X 13 lab01.adb
+9U11*Hello 9b11 48l5 48t10
+10f4 Map_Scale_Factor{float} 19m8 25r31 26r31 31r8
+11f4 Distance_01{float} 21m8 25r17 36r8
+12f4 Distance_02{float} 23m8 26r17 41r8
+13f4 Result_01{float} 25m4 38r8 47r8
+14f4 Result_02{float} 26m4 43r8 47r20
+15i4 Last{natural}
+
